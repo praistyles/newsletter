@@ -129,17 +129,23 @@ form {
 
 @media (min-width: 528px) {
     
+    body {
+        height: 100vh;
+        position: relative;
+
+    }
+    
     #maincont {
-        display: grid;
+         display: grid;
         grid-template-columns: 60% 40%;
         max-width: 529px;
-        height: 100vh;
-        margin: auto;
-        padding-top: 5rem;
-    
-
-        
-        
+        height: 315px;
+        border: 1px solid var(--blue);
+        border-radius: 10px;
+        margin-left: 10;
+        position: absolute;
+        right: 30%;
+        top: 20%;      
     }
 
     #tablet-img {
@@ -197,6 +203,7 @@ form {
 
 
 }
+
 
 
 
