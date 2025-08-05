@@ -1,0 +1,201 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*RESETS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/*COLORS*/
+:root {
+    --red: #ff6257;
+    --blue1: #242742;
+    --blue: #36384e;
+    --grey: #949494;
+    --white: #ffffff;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    color: var(--blue1);
+    margin: 1rem;
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin: 1rem;
+    color: var(--blue);
+}
+
+ul {
+    font-size: 0.8rem;
+    color: var(--blue);
+    margin-left: 3rem;
+    list-style-image: url('/assets/images/icon-list.svg');
+}
+
+ul li {
+    
+    padding-bottom: 1rem;
+
+}
+
+
+form {
+    margin: 1rem;
+    font-family: "Roboto", sans-serif;
+    color: var(--blue);
+}
+
+#email-label {
+    font-weight: 900;
+    font-size: 0.6rem;
+    
+}
+
+#email {
+    width: 92%;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--grey);
+}
+
+.sub-btn {
+    width: 92%;
+    padding: 1rem;
+    background-color: var(--blue1);
+    color: var(--white);
+    border-radius: 5px;
+    border: none;
+    margin-top: 1rem;
+}
+
+#desktop-img {
+    display: none;
+}
+
+#tablet-img {
+    display: none;
+}
+
+#text {
+    display: flex;
+}
+
+#error-msg {
+    font-weight: 900;
+    font-size: 0.6rem;
+    position: absolute;
+    right: 15%;
+    color: red;
+}
+
+.error-input::placeholder {
+      color: red;
+}
+
+.sub-btn:hover {
+    background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgb(221, 59, 86) 0%, rgb(252, 121, 69) 100%);;
+
+}
+
+
+@media (min-width: 375px) {
+
+    #mobile-img {
+        display: none;
+    }
+
+    #tablet-img {
+        display: block;
+    }
+  
+}
+
+@media (min-width: 528px) {
+    #maincont {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        max-width: 529px;
+        height: 100vh;
+        margin: auto;
+        padding-top: 5rem;
+    
+
+        
+        
+    }
+
+    #tablet-img {
+        display: none;
+    }
+
+    #desktop-img {
+        display: block;
+    
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.6rem;
+        padding-right: 3rem;
+    }
+
+    ul {
+        font-size: 0.6rem;
+    }
+
+    ul li {
+        padding: 0px;
+    }
+
+    #email-label {
+    font-size: 0.5rem;
+    
+    }
+
+    #email {
+    width: 80%;
+    padding: 0.3rem;
+    margin-top: 0.3rem;
+    }
+
+    .sub-btn {
+    width: 81%;
+    padding: 0.5em;
+    }
+
+    #error-msg {
+        right: 53%;
+    }
+
+
+
+
+    
+
+
+
+
+}
+
+
+
