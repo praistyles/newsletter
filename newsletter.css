@@ -129,11 +129,6 @@ form {
 
 @media (min-width: 528px) {
     
-    body {
-
-        background-color: var(--blue);
-    }
-    
     #maincont {
         display: grid;
         grid-template-columns: 60% 40%;
@@ -202,6 +197,7 @@ form {
 
 
 }
+
 
 
 
