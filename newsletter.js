@@ -6,19 +6,32 @@ const errorMessage = document.getElementById('error-msg');
 
 
 
-email.addEventListener("submit", (e) => {
-    e.preventDefault();
 
-    if (subscribeInputValue === '') {
-        subscribeInput.style.border = "1px solid red";
-        subscribeInput.classList.add('error-input');
-    
-        errorMessage.innerHTML = "Valid email required";
-    }
+email.addEventListener("submit", (e) => {
+    //e.preventDefault();
+
+    validateForm()
+
 })
 
 //document.location='subscription.html'
 
+function validateForm() {
+
+    if (subscribeInputValue === '') {
+
+      
+        subscribeInput.style.border = "1px solid red";
+        subscribeInput.classList.add('error-input');
+    
+        errorMessage.innerHTML = "Valid email required";
+
+    } 
+
+
+
+    
+}
 
 
 
